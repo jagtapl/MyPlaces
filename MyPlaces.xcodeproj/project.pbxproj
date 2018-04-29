@@ -20,6 +20,8 @@
 		D1AB8964208269290040D9EF /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AB8963208269290040D9EF /* LocationDetailsViewController.swift */; };
 		D1AC1B032087DACB00839044 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AC1B022087DACB00839044 /* CategoryPickerViewController.swift */; };
 		D1BC9495208A52BF001B487B /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC9494208A52BF001B487B /* HudView.swift */; };
+		D1F46ABA2093C4A900526232 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F46AB92093C4A900526232 /* LocationsViewController.swift */; };
+		D1F46ABC2095DB2400526232 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F46ABB2095DB2400526232 /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		D1AB8963208269290040D9EF /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		D1AC1B022087DACB00839044 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		D1BC9494208A52BF001B487B /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		D1F46AB92093C4A900526232 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		D1F46ABB2095DB2400526232 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		D1764F8F208FB44700629BDC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D1F46ABB2095DB2400526232 /* LocationCell.swift */,
 				D1BC9494208A52BF001B487B /* HudView.swift */,
 			);
 			path = View;
@@ -66,6 +71,7 @@
 				D1AB8963208269290040D9EF /* LocationDetailsViewController.swift */,
 				D1AC1B022087DACB00839044 /* CategoryPickerViewController.swift */,
 				D1943DC6207CF34700F8F300 /* SecondViewController.swift */,
+				D1F46AB92093C4A900526232 /* LocationsViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -83,11 +89,11 @@
 		D1943DB6207CF34600F8F300 = {
 			isa = PBXGroup;
 			children = (
-				D182E508209361BD00AFF9E4 /* CoreData */,
 				D1764F90208FB45700629BDC /* Control */,
-				D1764F8F208FB44700629BDC /* View */,
+				D182E508209361BD00AFF9E4 /* CoreData */,
 				D1943DC1207CF34700F8F300 /* MyPlaces */,
 				D1943DC0207CF34700F8F300 /* Products */,
+				D1764F8F208FB44700629BDC /* View */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,7 +194,9 @@
 				D182E50F209361BD00AFF9E4 /* DataModel.xcdatamodeld in Sources */,
 				D1AB8964208269290040D9EF /* LocationDetailsViewController.swift in Sources */,
 				D1943DC7207CF34700F8F300 /* SecondViewController.swift in Sources */,
+				D1F46ABA2093C4A900526232 /* LocationsViewController.swift in Sources */,
 				D1BC9495208A52BF001B487B /* HudView.swift in Sources */,
+				D1F46ABC2095DB2400526232 /* LocationCell.swift in Sources */,
 				D1764F86208E1B1D00629BDC /* Functions.swift in Sources */,
 				D1943DC3207CF34700F8F300 /* AppDelegate.swift in Sources */,
 				D1AC1B032087DACB00839044 /* CategoryPickerViewController.swift in Sources */,
