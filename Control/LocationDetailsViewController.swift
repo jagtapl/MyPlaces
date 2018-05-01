@@ -27,16 +27,12 @@ class LocationDetailsViewController: UITableViewController {
     @IBOutlet weak var dateLabel: UILabel!
     
     var coordinate = CLLocationCoordinate2D(latitude:0, longitude:0)
-    
     var placemark: CLPlacemark?
-    
-    var categoryName = "Bookstore"      //No Category"
-    
+    var categoryName = "Bookstore"
     var managedObjectContext: NSManagedObjectContext!
-    
     var date = Date()
-    
-    
+    var descriptionText = ""
+
     var locationToEdit: Location? {
         didSet {
             if let location = locationToEdit {
@@ -49,10 +45,6 @@ class LocationDetailsViewController: UITableViewController {
             }
         }
     }
-    
-    
-    var descriptionText = ""
-    
     
     // MARK :- target action
     @objc func hideKeyboard(_ gestureRecignizer: UIGestureRecognizer) {
@@ -72,7 +64,6 @@ class LocationDetailsViewController: UITableViewController {
             title = "Edit Location"
         }
         
-        dateLabel.text = format(date: date)
         
         descriptionTextView.text = descriptionText
         categoryLabel.text = categoryName
@@ -86,8 +77,9 @@ class LocationDetailsViewController: UITableViewController {
             addressLabel.text = "No address found for this location"
         }
         
-        dateLabel.text = format(date: Date())
-        
+//        dateLabel.text = format(date: Date())
+        dateLabel.text = format(date: date)
+
         // Hide keyboard
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         gestureRecognizer.cancelsTouchesInView = false
@@ -192,6 +184,7 @@ class LocationDetailsViewController: UITableViewController {
         navigationController?.isNavigationBarHidden = false
     }
     
+    //MARK:- Table View Delegates
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         if indexPath.section == 0 || indexPath.section == 1 {
             return indexPath
@@ -206,7 +199,6 @@ class LocationDetailsViewController: UITableViewController {
         }
     }
     
-    //MARK:- Table View Delegates
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 && indexPath.row == 0 {
             return 88
