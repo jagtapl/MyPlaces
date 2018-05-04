@@ -38,6 +38,8 @@ class LocationsViewController : UITableViewController {
     
     
     // MARK:- Table View Delegates
+
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return fetchResultsController.sections!.count
     }
@@ -97,6 +99,12 @@ class LocationsViewController : UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let location = fetchResultsController.object(at: indexPath)
+            
+            // delete photo image file
+            location.removePhotoFile()
+            managedObjectContext.delete(location)
+            
+            // delete location object
             managedObjectContext.delete(location)
             do {
                 try managedObjectContext.save()

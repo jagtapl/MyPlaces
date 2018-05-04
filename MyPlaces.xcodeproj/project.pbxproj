@@ -17,6 +17,7 @@
 		D1943DCA207CF34700F8F300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1943DC8207CF34700F8F300 /* Main.storyboard */; };
 		D1943DCC207CF34700F8F300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1943DCB207CF34700F8F300 /* Assets.xcassets */; };
 		D1943DCF207CF34700F8F300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1943DCD207CF34700F8F300 /* LaunchScreen.storyboard */; };
+		D1A5E367209C7F2600AD9553 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A5E366209C7F2600AD9553 /* UIImage+Resize.swift */; };
 		D1AB8964208269290040D9EF /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AB8963208269290040D9EF /* LocationDetailsViewController.swift */; };
 		D1AC1B032087DACB00839044 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AC1B022087DACB00839044 /* CategoryPickerViewController.swift */; };
 		D1BC9495208A52BF001B487B /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC9494208A52BF001B487B /* HudView.swift */; };
@@ -39,6 +40,7 @@
 		D1943DCB207CF34700F8F300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1943DCE207CF34700F8F300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1943DD0207CF34700F8F300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1A5E366209C7F2600AD9553 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		D1AB8963208269290040D9EF /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		D1AC1B022087DACB00839044 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		D1BC9494208A52BF001B487B /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				D1764F85208E1B1D00629BDC /* Functions.swift */,
 				D1943DC2207CF34700F8F300 /* AppDelegate.swift */,
 				D1943DC8207CF34700F8F300 /* Main.storyboard */,
+				D1A5E366209C7F2600AD9553 /* UIImage+Resize.swift */,
 				D1943DCB207CF34700F8F300 /* Assets.xcassets */,
 				D1943DCD207CF34700F8F300 /* LaunchScreen.storyboard */,
 				D1943DD0207CF34700F8F300 /* Info.plist */,
@@ -217,6 +220,7 @@
 				D1F46ABA2093C4A900526232 /* LocationsViewController.swift in Sources */,
 				D1BC9495208A52BF001B487B /* HudView.swift in Sources */,
 				D1F46AC1209661E600526232 /* MapViewController.swift in Sources */,
+				D1A5E367209C7F2600AD9553 /* UIImage+Resize.swift in Sources */,
 				D1F46ABC2095DB2400526232 /* LocationCell.swift in Sources */,
 				D1764F86208E1B1D00629BDC /* Functions.swift in Sources */,
 				D1943DC3207CF34700F8F300 /* AppDelegate.swift in Sources */,
